@@ -41,7 +41,7 @@
           </div>
        </c:if>
         <c:if test="${not empty requestScope['org.mycore.navigation.side.path']}">
-          <div class="col col-md-3 ir-content-side">
+          <div class="col col-md-3 ir-content-side" id="left-side-nav">
               <mcr:outputNavigation mode="side" id="${fn:substringBefore(requestScope['org.mycore.navigation.side.path'], '.')}"></mcr:outputNavigation>
               <c:if test="${not empty actionBean.infoBox}">
                 <mcr:includeWebcontent id="${fn:replace(actionBean.infoBox, '/', '.')}" file="${actionBean.infoBox}.html" />
