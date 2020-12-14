@@ -350,7 +350,6 @@ public class MCROutputNavigationTag extends MCRAbstractNavigationTag {
                             out.append(INDENT).append("</li>");
                         }
                     }
-                    out.append(INDENT).append("   </ul>");
                     if (getJspBody() != null) {
                         getJspBody().invoke(out);
                     }
